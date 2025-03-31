@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import "reset.css";
+/*reset.css 이용해서 브라우저 스타일을 없애고 자신의 스타일로 디자인 적용*/
+@import "status-bar.css";
 
 body {
     font-family: "Open Sans", sans-serif;
@@ -6,30 +9,20 @@ body {
     /*구글폰트에서 마음에 드는 폰트를 무료로 추가해도 됨*/
 }
 
-.status-bar {
+.welcome-header {
+    margin: 90px 0px;
+    text-align: center;
     display: flex;
-    justify-content: center;
-}
-
-.status-bar__column {
-    width: 33%;
-}
-
-.status-bar__column:first-child span {
-    margin-right: 5px;
-}
-
-.status-bar__column:nth-child(2) {
-    display: flex;
-    justify-content: center;
-}
-
-.status-bar__column:last-child {
-    display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     align-items: center;
 }
 
-.status-bar__column .fa-battery-full {
-    margin: 0px 5px;
+.welcome-header__title {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.welcome-header__text {
+    width: 60%;
+    opacity: 0.7;
 }
